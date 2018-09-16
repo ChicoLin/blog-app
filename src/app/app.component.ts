@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {AngularFirestore} from '@angular/fire/firestore';
+import {MatButtonModule, MatToolbarModule} from '@angular/material';
 import {Observable} from 'rxjs';
 
 @Component({
