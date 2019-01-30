@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {AngularFirestore} from '@angular/fire/firestore';
 import {Observable} from 'rxjs';
+import {ArticleService} from './article.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import {Observable} from 'rxjs';
 export class AppComponent {
   title = 'blog-app';
   items: Observable<any[]>;
-  constructor(afs: AngularFirestore) {
-    this.items = afs.collection('articles').valueChanges();
+  constructor(articleService: ArticleService) {
+    this.items = articleService.getArticles();
   }
 }

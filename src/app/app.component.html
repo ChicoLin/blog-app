@@ -1,10 +1,7 @@
 <app-nav-bar></app-nav-bar>
+<img id="heading" width="200" alt="ember-spirit" src="https://www.google.com/logos/doodles/2018/fathers-day-2018-nicaragua-poland-6125081024528384-2x.jpg">
 <div style="text-align:center">
-  <img width="200" alt="ember-spirit" src="https://www.spreadshirt.com/image-server/v1/mp/designs/1006587021,width=178,height=178/ember-spirit.png">
-  <button mat-raised-button>Button</button>
-  <ul>
-    <li class="text" *ngFor="let item of items | async">
-      {{item.name}}
-    </li>
-  </ul>
+  <mat-card mat-card-title class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </mat-card>
 </div>

@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {MatButtonModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {environment} from '../environments/environment';
@@ -17,6 +17,7 @@ import {NavBarComponent} from './nav-bar/nav-bar.component';
     AngularFirestoreModule,
     MatButtonModule,
     MatToolbarModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
