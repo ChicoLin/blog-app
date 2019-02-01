@@ -1,7 +1,4 @@
 <app-nav-bar></app-nav-bar>
 <img id="heading" width="200" alt="ember-spirit" src="https://www.google.com/logos/doodles/2018/fathers-day-2018-nicaragua-poland-6125081024528384-2x.jpg">
-<div style="text-align:center">
-  <mat-card mat-card-title class="text" *ngFor="let item of items | async">
-    {{item.name}}
-  </mat-card>
-</div>
+<router-outlet></router-outlet>
+
