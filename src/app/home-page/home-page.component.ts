@@ -7,7 +7,7 @@ import {ArticleService} from '../article.service';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
   items: Observable<any[]>;
   constructor(articleService: ArticleService) {
     this.items = articleService.getArticles();

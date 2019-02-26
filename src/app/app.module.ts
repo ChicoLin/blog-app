@@ -1,19 +1,23 @@
 import {NgModule} from '@angular/core';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {MatButtonModule, MatCardModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatIconModule, MatToolbarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {environment} from '../environments/environment';
 
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {HomePageComponent} from './home-page/home-page.component';
 import {NavBarComponent} from './nav-bar/nav-bar.component';
-import { AppRoutingModule } from './app-routing.module';
-import { TechPageComponent } from './tech-page/tech-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import {PostCardComponent} from './post-card/post-card.component';
+import {TechPageComponent} from './tech-page/tech-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, TechPageComponent, HomePageComponent],
+  declarations: [
+    AppComponent, NavBarComponent, TechPageComponent, HomePageComponent,
+    PostCardComponent
+  ],
   imports: [
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -21,6 +25,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
+    MatIconModule,
     AppRoutingModule,
   ],
   providers: [],

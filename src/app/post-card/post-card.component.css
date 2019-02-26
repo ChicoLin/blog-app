@@ -1,0 +1,18 @@
+mat-card {
+  margin: 2px 50px;
+  padding: 0 0 10px 0;
+  width: 700px;
+  border-radius: 4px;
+}
+
+mat-toolbar {
+  padding: 10px;
+  background-color: #4885ed;
+  color: white;
+}
+
+p.abstract {
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}

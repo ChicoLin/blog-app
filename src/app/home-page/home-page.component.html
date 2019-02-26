@@ -1,5 +1,4 @@
 <div style="text-align:center">
-  <mat-card mat-card-title class="text" *ngFor="let item of items | async">
-    {{item.name}}
-  </mat-card>
+  <app-post-card [article]="item" *ngFor="let item of items | async">
+  </app-post-card>
 </div>
