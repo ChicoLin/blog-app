@@ -12,11 +12,13 @@ import {HomePageComponent} from './home-page/home-page.component';
 import {NavBarComponent} from './nav-bar/nav-bar.component';
 import {PostCardComponent} from './post-card/post-card.component';
 import {TechPageComponent} from './tech-page/tech-page.component';
+import { IconSetComponent } from './icon-set/icon-set.component';
 
 @NgModule({
   declarations: [
     AppComponent, NavBarComponent, TechPageComponent, HomePageComponent,
-    PostCardComponent
+    PostCardComponent,
+    IconSetComponent
   ],
   imports: [
     BrowserAnimationsModule,

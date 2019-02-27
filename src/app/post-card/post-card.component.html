@@ -2,10 +2,12 @@
   <mat-toolbar class="text">
     {{article.name}}
   </mat-toolbar>
-  <mat-icon [inline]="false">visibility</mat-icon> 12
-  <mat-icon>mode_comment</mat-icon> 7
-  <mat-icon>favorite</mat-icon> 3
-  <mat-icon>access_time</mat-icon> 2018-12-22
-  <mat-icon>update</mat-icon> 2019-02-12
   <p class="abstract">{{article.abstract}}</p>
+  <div class="iconContainer">
+    <app-icon-set iconName="visibility" description="12"></app-icon-set>
+    <app-icon-set iconName="mode_comment" description="7"></app-icon-set>
+    <app-icon-set iconName="favorite" description="3"></app-icon-set>
+    <app-icon-set iconName="access_time" description="2018-12-22"></app-icon-set>
+    <app-icon-set iconName="update" description="2019-02-12"></app-icon-set>
+  </div>
 </mat-card>

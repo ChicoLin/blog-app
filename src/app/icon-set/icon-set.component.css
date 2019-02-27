@@ -1,0 +1,17 @@
+mat-icon {
+  margin-right: 3px;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+:host {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: grey;
+}
+
+:host:hover {
+  color: black;
+}
