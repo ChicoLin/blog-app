@@ -8,4 +8,5 @@ import {Component, Input} from '@angular/core';
 export class IconSetComponent {
   @Input() iconName: string;
   @Input() description: string;
+  @Input() value = '';
 }

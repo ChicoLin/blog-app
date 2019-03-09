@@ -1,1 +1,4 @@
-<mat-icon>{{iconName}}</mat-icon>{{description}}
+<mat-icon [matTooltip]="description"
+          matTooltipPosition="before">
+  {{iconName}}
+</mat-icon>{{value}}

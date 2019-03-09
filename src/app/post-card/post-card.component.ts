@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
 
 import {Article} from '../article';
+import {TimeService} from '../time.service';
 
 @Component({
   selector: 'app-post-card',
@@ -10,4 +10,6 @@ import {Article} from '../article';
 })
 export class PostCardComponent {
   @Input() article: Article;
+
+  constructor(public readonly timeService: TimeService) {}
 }
